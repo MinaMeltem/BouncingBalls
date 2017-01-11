@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BouncingBalls">
+        <attr name="circleXSpeed" format="dimension" ></attr>
+        <attr name="circleYSpeed" format="dimension"></attr>
+        <attr name="circleXPosition" format="dimension" ></attr>
+        <attr name="circleYPosition" format="dimension"></attr>
+        <attr name="circleRadius" format="dimension"></attr>
+        <attr name="circleColor" format="color"></attr>
+    </declare-styleable>
+</resources>
