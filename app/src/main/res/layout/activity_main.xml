@@ -17,7 +17,26 @@
         app:circleRadius="10dp"
         app:circleXPosition="20dp"
         app:circleYPosition="20dp"
-        app:circleXSpeed="8dp"
-        app:circleColor="@color/colorAccent"/>
+        app:circleXSpeed="5dp"
+        app:circleYSpeed="5dp"
+        app:circleColor="#619e21"/>
+
+    <com.example.bouncingballs.BouncingBalls
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:circleRadius="5dp"
+        app:circleXPosition="20dp"
+        app:circleYPosition="20dp"
+        app:circleXSpeed="2dp"
+        app:circleColor="#ff6f00"/>
+
+    <com.example.bouncingballs.BouncingBalls
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:circleRadius="15dp"
+        app:circleXPosition="100dp"
+        app:circleYPosition="100dp"
+        app:circleYSpeed="2dp"
+        app:circleColor="#8b5ded"/>
 
 </RelativeLayout>
