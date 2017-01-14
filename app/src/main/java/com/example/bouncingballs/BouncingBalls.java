@@ -24,6 +24,7 @@ public class BouncingBalls extends View {
     private int circleYSpeed;
     private int circleRadius;
     private int circleColor;
+    private int circleRightEdge;
 
 
     public BouncingBalls(Context context) {
@@ -42,6 +43,7 @@ public class BouncingBalls extends View {
             circleXSpeed = a.getDimensionPixelSize(R.styleable.BouncingBalls_circleXSpeed, 0);
             circleYSpeed = a.getDimensionPixelSize(R.styleable.BouncingBalls_circleYSpeed, 0);
             circleRadius = a.getDimensionPixelSize(R.styleable.BouncingBalls_circleRadius, 10);
+            circleRightEdge = a.getDimensionPixelSize(R.styleable.BouncingBalls_circleRightEdge, 0);
             circleColor = a.getColor(R.styleable.BouncingBalls_circleColor, Color.BLACK);
 
         } finally {
@@ -63,7 +65,7 @@ public class BouncingBalls extends View {
 
         //moving right - left
 
-        if (circleXPosition >= getWidth()) {
+        if (circleXPosition >= circleRightEdge) {
             movingRight = false;
         }
 
@@ -71,13 +73,16 @@ public class BouncingBalls extends View {
             movingRight = true;
         }
 
+
         if (movingRight) {
             circleXPosition += circleXSpeed;
         } else {
             circleXPosition -= circleXSpeed;
         }
 
-        if (circleXPosition >= getWidth()) {
+
+
+        if (circleXPosition >= circleRightEdge) {
             movingRight = false;
         }
 

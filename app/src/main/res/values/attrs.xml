@@ -7,5 +7,7 @@
         <attr name="circleYPosition" format="dimension"> </attr>
         <attr name="circleRadius" format="dimension"> </attr>
         <attr name="circleColor" format = "color"> </attr>
+        <attr name="circleRightEdge" format = "dimension"> </attr>
+
     </declare-styleable>
 </resources>
